@@ -3,6 +3,7 @@
 
   "finalSystemOwner": "0xa518097A3843F10c06a9B9419aa02245771dD442",
   "controller": "0xa518097A3843F10c06a9B9419aa02245771dD442",
+  "portalGuardian": "0xa518097A3843F10c06a9B9419aa02245771dD442",
 
   "l1StartingBlockTag": "0x2f43ed9d9cdc5e83c666d71dd59f6a09751adfa120bb5457ddaa919cba190541",
 

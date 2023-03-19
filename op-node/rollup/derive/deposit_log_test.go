@@ -74,7 +74,12 @@ func makeReceipts(rng *rand.Rand, blockHash common.Hash, depositContractAddr com
 					return []*types.Receipt{}, []*types.DepositTx{}, err
 				}
 			} else {
-				ev = testutils.GenerateLog(testutils.RandomAddress(rng), nil, nil)
+				ev = testutils.GenerateLog(testutils.RandomAddress(rng), []common.Hash{
+					common.HexToHash("0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"),
+					common.HexToHash("0x0000000000000000000000007893333919d5ae289a9358861b547cce85fba4ac"),
+					common.HexToHash("0x0000000000000000000000000000000000000000000000000000000000000000"),
+					common.HexToHash("0x0000000000000000000000000000000000000000000000000000000000000000"),
+				}, nil)
 			}
 			ev.TxIndex = uint(txIndex)
 			ev.Index = logIndex
